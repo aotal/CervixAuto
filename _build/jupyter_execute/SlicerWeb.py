@@ -1,4 +1,3 @@
-<a href="../desktop" target="_blank"><img src="https://www.slicer.org/img/3DSlicerLogo-H-Color-218x144.png"/>
 <h1><center>Click here to open 3D Slicer in a new window</center></h1></a>
 
 # Run this cell (Shift+Enter) to show application here
