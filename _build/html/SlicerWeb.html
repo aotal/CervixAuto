@@ -218,25 +218,12 @@
 <span class="kn">import</span> <span class="nn">JupyterNotebooksLib</span> <span class="k">as</span> <span class="nn">slicernb</span>
 <span class="n">slicernb</span><span class="o">.</span><span class="n">AppWindow</span><span class="p">(</span><span class="n">contents</span><span class="o">=</span><span class="s1">&#39;full&#39;</span><span class="p">)</span>
 <span class="n">slicer</span><span class="o">.</span><span class="n">mrmlScene</span><span class="o">.</span><span class="n">Clear</span><span class="p">()</span>
-<span class="n">volume</span> <span class="o">=</span> <span class="n">slicernb</span><span class="o">.</span><span class="n">downloadFromURL</span><span class="p">(</span>
-    <span class="n">uris</span><span class="o">=</span><span class="s2">&quot;https://github.com/Slicer/SlicerTestingData/releases/download/MD5/39b01631b7b38232a220007230624c8e&quot;</span><span class="p">,</span>
-    <span class="n">fileNames</span><span class="o">=</span><span class="s2">&quot;MRHead.nrrd&quot;</span><span class="p">,</span>
-    <span class="n">nodeNames</span><span class="o">=</span><span class="s2">&quot;Volume&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+<span class="c1">#volume = slicernb.downloadFromURL(</span>
+<span class="c1">#    uris=&quot;https://github.com/Slicer/SlicerTestingData/releases/download/MD5/39b01631b7b38232a220007230624c8e&quot;,</span>
+<span class="c1">#    fileNames=&quot;MRHead.nrrd&quot;,</span>
+<span class="c1">#    nodeNames=&quot;Volume&quot;)[0]</span>
 
-<span class="n">slicernb</span><span class="o">.</span><span class="n">showVolumeRendering</span><span class="p">(</span><span class="n">volume</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "fbea31d1478d4ca2b161b129d19b9ee1", "version_major": 2, "version_minor": 0}
-</script><div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">TypeError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="n">In</span>  <span class="p">[</span><span class="mi">1</span><span class="p">]:</span>
-<span class="n">Line</span> <span class="mi">11</span><span class="p">:</span>    
-
-<span class="ne">TypeError</span>: &#39;MRMLCorePython.vtkMRMLScalarVolumeNode&#39; object is not subscriptable
-<span class="gt">---------------------------------------------------------------------------</span>
+<span class="c1">#slicernb.showVolumeRendering(volume)</span>
 </pre></div>
 </div>
 </div>

@@ -7,9 +7,9 @@
 import JupyterNotebooksLib as slicernb
 slicernb.AppWindow(contents='full')
 slicer.mrmlScene.Clear()
-volume = slicernb.downloadFromURL(
-    uris="https://github.com/Slicer/SlicerTestingData/releases/download/MD5/39b01631b7b38232a220007230624c8e",
-    fileNames="MRHead.nrrd",
-    nodeNames="Volume")[0]
+#volume = slicernb.downloadFromURL(
+#    uris="https://github.com/Slicer/SlicerTestingData/releases/download/MD5/39b01631b7b38232a220007230624c8e",
+#    fileNames="MRHead.nrrd",
+#    nodeNames="Volume")[0]
 
-slicernb.showVolumeRendering(volume)
+#slicernb.showVolumeRendering(volume)
