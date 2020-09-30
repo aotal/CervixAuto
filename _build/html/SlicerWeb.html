@@ -153,6 +153,26 @@
 
         <!-- Launch buttons -->
 
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/aotal/CervixAuto/master?urlpath=tree/SlicerWeb.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        <button type="button" class="btn btn-secondary topbarbtn"
+            onclick="initThebeSBT()" title="Launch Thebe" data-toggle="tooltip" data-placement="left"><i
+                class="fas fa-play"></i><span style="margin-left: .4em;">Live Code</span></button>
+        
+    </div>
+</div>
+
     </div>
 
     <!-- Table of contents -->
@@ -170,7 +190,56 @@
         
               <div>
                 
-  
+  <h1><center>Click here to open 3D Slicer in a new window</center></h1></a><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Run this cell (Shift+Enter) to show application here</span>
+<span class="kn">import</span> <span class="nn">JupyterNotebooksLib</span> <span class="k">as</span> <span class="nn">slicernb</span>
+<span class="n">slicernb</span><span class="o">.</span><span class="n">AppWindow</span><span class="p">(</span><span class="n">contents</span><span class="o">=</span><span class="s1">&#39;full&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+<iframe
+    width="960"
+    height="768"
+    src="../desktop"
+    frameborder="0"
+    allowfullscreen
+></iframe>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Run this cell to load a file from a URL.</span>
+<span class="c1"># You can load your own data by changing inputs of downloadFromURL.</span>
+<span class="c1"># Any questions? Write us on the Slicer forum: https://discourse.slicer.org</span>
+<span class="n">slicer</span><span class="o">.</span><span class="n">mrmlScene</span><span class="o">.</span><span class="n">Clear</span><span class="p">()</span>
+
+<span class="n">volume</span> <span class="o">=</span> <span class="n">slicernb</span><span class="o">.</span><span class="n">downloadFromURL</span><span class="p">(</span>
+    <span class="n">uris</span><span class="o">=</span><span class="s2">&quot;https://github.com/Slicer/SlicerTestingData/releases/download/MD5/39b01631b7b38232a220007230624c8e&quot;</span><span class="p">,</span>
+    <span class="n">fileNames</span><span class="o">=</span><span class="s2">&quot;MRHead.nrrd&quot;</span><span class="p">,</span>
+    <span class="n">nodeNames</span><span class="o">=</span><span class="s2">&quot;Volume&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+
+<span class="n">slicernb</span><span class="o">.</span><span class="n">showVolumeRendering</span><span class="p">(</span><span class="n">volume</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "9140de7a5d9d45eb88614410dc082c58", "version_major": 2, "version_minor": 0}
+</script><div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">TypeError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="n">In</span>  <span class="p">[</span><span class="mi">2</span><span class="p">]:</span>
+<span class="n">Line</span> <span class="mi">9</span><span class="p">:</span>     
+
+<span class="ne">TypeError</span>: &#39;MRMLCorePython.vtkMRMLScalarVolumeNode&#39; object is not subscriptable
+<span class="gt">---------------------------------------------------------------------------</span>
+</pre></div>
+</div>
+</div>
+</div>
+
     <script type="text/x-thebe-config">
     {
         requestKernel: true,
@@ -180,16 +249,16 @@
         },
         codeMirrorConfig: {
             theme: "abcdef",
-            mode: "python"
+            mode: "slicer-4.11"
         },
         kernelOptions: {
-            kernelName: "python3",
+            kernelName: "slicer-4.11",
             path: "./."
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'python3'</script>
+    <script>kernelName = 'slicer-4.11'</script>
 
               </div>
               
