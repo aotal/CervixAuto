@@ -11,14 +11,15 @@ html:
 latex:
   latex_documents:
     targetname: book.tex
-
+launch_buttons:
+  thebe:  true
 repository:
-  url                       : https://github.com/aotal/gine  # The URL to your book's repository
+  url                       : https://github.com/aotal/CervixAuto  # The URL to your book's repository
   branch                    : master  # Which branch of the repository should be used when creating links
 sphinx:
   config:
     html_show_copyright: false
     language: es
-    html_theme: sphinx_book_theme
+    html_theme: sphinx_book_theme # Para que aparezca en castellano hay que usar el fork de mi cuenta de github
     html_theme_options:
       search_bar_text: Buscar en la página...
