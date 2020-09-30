@@ -14,6 +14,7 @@ latex:
 launch_buttons:
   binderhub_url: "https://mybinder.org"  # The URL for your BinderHub (e.g., https://mybinder.org)
   thebe:  true
+  notebook_interface: "classic" # The interface interactive links will activate ["classic", "jupyterlab"]
 repository:
   url                       : https://github.com/aotal/CervixAuto  # The URL to your book's repository
   branch                    : master  # Which branch of the repository should be used when creating links
