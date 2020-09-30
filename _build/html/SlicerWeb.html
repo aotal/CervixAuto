@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es">
   <head>
     <meta charset="utf-8" />
-    <title>&lt;no title&gt; &#8212; Proyecto de autoreconstrucción</title>
+    <title>Vamos a ganar &#8212; Proyecto de autoreconstrucción</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
     <link href="_static/css/index.css" rel="stylesheet">
     <link rel="stylesheet" href="_static/sphinx-book-theme.css" type="text/css" />
@@ -73,11 +73,28 @@
 </form>
 
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-  <ul class="nav sidenav_l1">
- <li class="toctree-l1">
+  <ul class="current nav sidenav_l1">
+ <li class="toctree-l1 current active">
   <a class="reference internal" href="content.html">
    En el principio…
   </a>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="markdown.html">
+     Markdown Files
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="untitled.html">
+     La mare del tano
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Vamos a ganar
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -190,32 +207,17 @@
         
               <div>
                 
-  <h1><center>Click here to open 3D Slicer in a new window</center></h1></a><div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Run this cell (Shift+Enter) to show application here</span>
-<span class="kn">import</span> <span class="nn">JupyterNotebooksLib</span> <span class="k">as</span> <span class="nn">slicernb</span>
-<span class="n">slicernb</span><span class="o">.</span><span class="n">AppWindow</span><span class="p">(</span><span class="n">contents</span><span class="o">=</span><span class="s1">&#39;full&#39;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_html">
-<iframe
-    width="960"
-    height="768"
-    src="../desktop"
-    frameborder="0"
-    allowfullscreen
-></iframe>
-</div></div>
-</div>
+  <div class="section" id="vamos-a-ganar">
+<h1>Vamos a ganar<a class="headerlink" href="#vamos-a-ganar" title="Enlazar permanentemente con este título">¶</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Run this cell to load a file from a URL.</span>
 <span class="c1"># You can load your own data by changing inputs of downloadFromURL.</span>
 <span class="c1"># Any questions? Write us on the Slicer forum: https://discourse.slicer.org</span>
+<span class="c1"># Run this cell (Shift+Enter) to show application here</span>
+<span class="kn">import</span> <span class="nn">JupyterNotebooksLib</span> <span class="k">as</span> <span class="nn">slicernb</span>
+<span class="n">slicernb</span><span class="o">.</span><span class="n">AppWindow</span><span class="p">(</span><span class="n">contents</span><span class="o">=</span><span class="s1">&#39;full&#39;</span><span class="p">)</span>
 <span class="n">slicer</span><span class="o">.</span><span class="n">mrmlScene</span><span class="o">.</span><span class="n">Clear</span><span class="p">()</span>
-
 <span class="n">volume</span> <span class="o">=</span> <span class="n">slicernb</span><span class="o">.</span><span class="n">downloadFromURL</span><span class="p">(</span>
     <span class="n">uris</span><span class="o">=</span><span class="s2">&quot;https://github.com/Slicer/SlicerTestingData/releases/download/MD5/39b01631b7b38232a220007230624c8e&quot;</span><span class="p">,</span>
     <span class="n">fileNames</span><span class="o">=</span><span class="s2">&quot;MRHead.nrrd&quot;</span><span class="p">,</span>
@@ -227,15 +229,16 @@
 </div>
 <div class="cell_output docutils container">
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "d177368253884d0b9d3669f6346fd8ed", "version_major": 2, "version_minor": 0}
+{"model_id": "fbea31d1478d4ca2b161b129d19b9ee1", "version_major": 2, "version_minor": 0}
 </script><div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">TypeError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="n">In</span>  <span class="p">[</span><span class="mi">2</span><span class="p">]:</span>
-<span class="n">Line</span> <span class="mi">9</span><span class="p">:</span>     
+<span class="n">In</span>  <span class="p">[</span><span class="mi">1</span><span class="p">]:</span>
+<span class="n">Line</span> <span class="mi">11</span><span class="p">:</span>    
 
 <span class="ne">TypeError</span>: &#39;MRMLCorePython.vtkMRMLScalarVolumeNode&#39; object is not subscriptable
 <span class="gt">---------------------------------------------------------------------------</span>
 </pre></div>
+</div>
 </div>
 </div>
 </div>
