@@ -46,7 +46,6 @@ var initThebe = () => {
 
         // Now update our thebe status
         thebeStatus = data.status;
-        localStorage.setItem("estado",thebeStatus);
 
         // Find any cells with an initialization tag and ask thebe to run them when ready
         if (data.status === "ready") {

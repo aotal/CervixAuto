@@ -40,6 +40,7 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Índice" href="genindex.html" />
     <link rel="search" title="Búsqueda" href="search.html" />
+    <link rel="next" title="Data loading and visualization" href="01_Data_loading_and_display.html" />
     <link rel="prev" title="La mare del tano" href="untitled.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -92,6 +93,26 @@
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
      Vamos a ganar
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="01_Data_loading_and_display.html">
+     Data loading and visualization
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="01_Data_loading_and_display.html#model-display">
+     Model display
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="01_Data_loading_and_display.html#plotting-using-matplotlib">
+     Plotting using matplotlib
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="01_Data_loading_and_display.html#file-upload-download">
+     File upload/download
     </a>
    </li>
   </ul>
@@ -208,7 +229,6 @@
               <div>
                 
   <div class="section" id="vamos-a-ganar">
-
 <h1>Vamos a ganar<a class="headerlink" href="#vamos-a-ganar" title="Enlazar permanentemente con este título">¶</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -218,35 +238,31 @@
 <span class="c1"># Run this cell (Shift+Enter) to show application here</span>
 <span class="kn">import</span> <span class="nn">JupyterNotebooksLib</span> <span class="k">as</span> <span class="nn">slicernb</span>
 <span class="n">slicernb</span><span class="o">.</span><span class="n">AppWindow</span><span class="p">(</span><span class="n">contents</span><span class="o">=</span><span class="s1">&#39;full&#39;</span><span class="p">)</span>
-<span class="c1">#slicer.mrmlScene.Clear()</span>
-<span class="c1">#volume = slicernb.downloadFromURL(</span>
-<span class="c1">#    uris=&quot;https://github.com/Slicer/SlicerTestingData/releases/download/MD5/39b01631b7b38232a220007230624c8e&quot;,</span>
-<span class="c1">#    fileNames=&quot;MRHead.nrrd&quot;,</span>
-<span class="c1">#    nodeNames=&quot;Volume&quot;)[0]</span>
-<span class="c1"># jaja</span>
+<span class="n">slicer</span><span class="o">.</span><span class="n">mrmlScene</span><span class="o">.</span><span class="n">Clear</span><span class="p">()</span>
+<span class="n">volume</span> <span class="o">=</span> <span class="n">slicernb</span><span class="o">.</span><span class="n">downloadFromURL</span><span class="p">(</span>
+    <span class="n">uris</span><span class="o">=</span><span class="s2">&quot;https://github.com/Slicer/SlicerTestingData/releases/download/MD5/39b01631b7b38232a220007230624c8e&quot;</span><span class="p">,</span>
+    <span class="n">fileNames</span><span class="o">=</span><span class="s2">&quot;MRHead.nrrd&quot;</span><span class="p">,</span>
+    <span class="n">nodeNames</span><span class="o">=</span><span class="s2">&quot;Volume&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
 
-<span class="c1">#slicernb.showVolumeRendering(volume)</span>
+<span class="n">slicernb</span><span class="o">.</span><span class="n">showVolumeRendering</span><span class="p">(</span><span class="n">volume</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html">
-<iframe
-    width="960"
-    height="768"
-    src="../desktop"
-    frameborder="0"
-    allowfullscreen
-></iframe>
-</div></div>
-</div>
-</div>
-    <script>
-        document.getElementById("result").innerHTML = localStorage.getItem("estado");
-    </script>
-    
-    <span id="result">aa</span>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "eab5a8c18fad4743b12882925cc5ca6f", "version_major": 2, "version_minor": 0}
+</script><div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">TypeError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="n">In</span>  <span class="p">[</span><span class="mi">1</span><span class="p">]:</span>
+<span class="n">Line</span> <span class="mi">11</span><span class="p">:</span>    
 
+<span class="ne">TypeError</span>: &#39;MRMLCorePython.vtkMRMLScalarVolumeNode&#39; object is not subscriptable
+<span class="gt">---------------------------------------------------------------------------</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -277,6 +293,7 @@
     <div class='prev-next-bottom'>
         
     <a class='left-prev' id="prev-link" href="untitled.html" title="previous page">La mare del tano</a>
+    <a class='right-next' id="next-link" href="01_Data_loading_and_display.html" title="next page">Data loading and visualization</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
