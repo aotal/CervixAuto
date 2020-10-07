@@ -6,7 +6,7 @@
 # Run this cell (Shift+Enter) to show application here
 import JupyterNotebooksLib as slicernb
 slicernb.AppWindow(contents='full')
-slicer.mrmlScene.Clear()
+#slicer.mrmlScene.Clear()
 #volume = slicernb.downloadFromURL(
 #    uris="https://github.com/Slicer/SlicerTestingData/releases/download/MD5/39b01631b7b38232a220007230624c8e",
 #    fileNames="MRHead.nrrd",
